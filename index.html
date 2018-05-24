@@ -1,0 +1,45 @@
+<!DOCtype html>
+<head>
+
+    <script>
+
+
+
+        window.onload=function(){
+
+
+
+            document.getElementById('email').addEventListener("click",sendEmail);
+        }
+
+        function sendEmail() {
+
+            var mess = "Greetings, %0A Lorem ipsum dolor sit amet, duo in congue meliore voluptaria. Ne mel aperiam docendi dissentias, ut pro suscipit detraxit. Vix no aeque melius erroribus, id his detraxit iracundia incorrupte. Cum omnium virtute no. Ponderum honestatis an nam, quo exerci adipiscing cu. No officiis aliquando nec, habeo latine erroribus eu duo. Eos vivendum concludaturque et, sonet alterum qualisque qui ea.%0A Thank you,%0A Shawn";
+
+            window.location.href='mailto:sd19surf@gmail.com&subject=test&body='+ mess;
+
+            document.getElementById("result").innerHTML = "<h2>Your message has been prepped to send. If you dont have an email prepped from you please ensure you default email is Outlook or suitable client.</h2>";            
+        }
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <button id="email">Send Email</button>
+
+    <div id="result">
+
+    </div>
+
+
+
+</body>
+
+
+</html>
